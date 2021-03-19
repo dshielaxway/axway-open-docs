@@ -1,11 +1,10 @@
 {
 "title": "Install Policy Studio",
-"linkTitle": "Install Policy Studio",
-"weight":"16",
-"date": "2019-10-02",
-"description": "Policy Studio is a graphical IDE that allows you to virtualize APIs and develop policies."
+  "linkTitle": "Install Policy Studio",
+  "weight": "16",
+  "date": "2019-10-02",
+  "description": "Policy Studio is a graphical IDE that allows you to virtualize APIs and develop policies."
 }
-
 You can install Policy Studio on both Linux and Windows.
 
 {{< alert title="Note" color="primary" >}}Windows is supported only for a limited set of developer tools, see [Install developer tools on Windows](/docs/apim_installation/apigtw_install/install_dev_tools). API Gateway and API Manager do not support Windows.{{< /alert >}}
@@ -43,6 +42,9 @@ You must start the installer from the same window.
 ## Start Policy Studio
 
 {{< alert title="Note" color="primary" >}}Before starting Policy Studio, ensure both the Admin Node Manager and the API Gateway instance are running. For more details, see [Start API Gateway](/docs/apim_installation/apigtw_install/install_gateway#start-api-gateway).{{< /alert >}}
+
+{{< alert title="Note" color="primary" >}}It is recommended to run Policy Studio with minimal permissions. It is against security best practices to run Policy Studio using privileged accounts, such as root in UNIX environments, or LOCALSYSTEM in Windows environments. When applications are run with privileged accounts, the processes and the code that gets executed on top of these processes run with all of the rights of these users. Code will execute with the authority of the privileged account, thus increasing the possible damage from a hypothetical vulnerability exploit. This risk is not present in any application running with minimal permissions.{{< /alert >}}
+
 
 If you did not select to launch Policy Studio after installation, perform the following steps:
 
