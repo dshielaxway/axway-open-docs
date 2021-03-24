@@ -42,18 +42,19 @@ You must start the installer from the same window.
 
 ## Start Policy Studio
 
-{{< alert title="Note" color="primary" >}}Before starting Policy Studio, ensure both the Admin Node Manager and the API Gateway instance are running. For more details, see [Start API Gateway](/docs/apim_installation/apigtw_install/install_gateway#start-api-gateway).{{< /alert >}}
+It is against security best practices to run Policy Studio using privileged accounts, such as `root` in UNIX environments or `LOCALSYSTEM` in Windows environments.
 
-{{< alert title="Note" color="primary" >}}It is recommended to run Policy Studio with minimal permissions. It is against security best practices to run Policy Studio using privileged accounts, such as root in UNIX environments, or LOCALSYSTEM in Windows environments. When applications are run with privileged accounts, the processes and the code being executed on top of these processes run with all of the rights of these users. Code will execute with the authority of the privileged account, thus increasing the possible damage from a hypothetical vulnerability exploit. This risk is not present in any application running with minimal permissions.{{< /alert >}}
+When applications are run with privileged accounts, the processes and the code being executed on top of these processes run with all of the rights of these users. Code will execute with the authority of the privileged account, thus increasing the possible damage from a hypothetical vulnerability exploit. This risk is not present in any application running with minimal permissions.
 
 If you did not select to launch Policy Studio after installation, perform the following steps:
 
-1. Open a command prompt.
-2. Change to your Policy Studio installation directory (for example, `INSTALL_DIR/policystudio`).
-3. Run `policystudio`.
-4. When Policy Studio starts up, select **File > New Project**.
-5. In the New Project dialog, enter a name for the project and click **Next**.
-6. Select **From a running API Gateway instance** and click **Next**.
-7. In the Open Connection dialog, select the Admin Node Manager session to connect to, enter the administrator user name and password you specified when you installed API Gateway, and click **OK**.
-8. In the Download Options dialog, select a group and an API Gateway instance to download its configuration.
-9. If a passphrase has been set, enter it in the **Passphrase** field, and click **Finish**. Alternatively, if no passphrase has been set, click **Finish**.
+1. Ensure both the Admin Node Manager and the API Gateway instance are running. For more details, see [Start API Gateway](/docs/apim_installation/apigtw_install/install_gateway#start-api-gateway)
+2. Open a command prompt.
+3. Change to your Policy Studio installation directory (for example, `INSTALL_DIR/policystudio`).
+4. Run `policystudio`.
+5. When Policy Studio starts up, select **File > New Project**.
+6. In the New Project dialog, enter a name for the project and click **Next**.
+7. Select **From a running API Gateway instance** and click **Next**.
+8. In the Open Connection dialog, select the Admin Node Manager session to connect to, enter the administrator user name and password you specified when you installed API Gateway, and click **OK**.
+9. In the Download Options dialog, select a group and an API Gateway instance to download its configuration.
+10. If a passphrase has been set, enter it in the **Passphrase** field, and click **Finish**. Alternatively, if no passphrase has been set, click **Finish**.
